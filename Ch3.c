@@ -137,22 +137,79 @@ int breakstatement(){
 
 int looptillodd(){
     int n ;
-    do
-    {
-        /* code */
+    do {
         printf("Enter the number:");
         scanf("%d",&n);
         printf("%d\n",n);
-        if (n%2!=0){
+        if ( n % 2 == 0) {
             break;
-
         }
-    } while ();
-    printf("Terminating");
+
+    } while (1);
+    printf("Entered Even number");
     return 0 ;
-    
+}
+
+
+int loopuntil7(){
+    int n;
+    do
+    { 
+    printf("Enter the number:");
+    scanf("%d",&n);
+    printf("%d\n",n);
+    if (n%7==0){
+        break;
+        }
+    }
+    while(1);
+    printf("Entered multiple of 7");
+}
+
+int continuestatement(){
+    int n,i;
+    printf("Enter the number: ");
+    scanf("%d",&n);
+    for (i=0;i<=n;i++){
+        if (i == 3){
+            continue;
+        }
+        printf("%d\n",i);
+    }
 
 }
+
+int odd5to50() {
+    for(int i=5; i<=50; i++) {
+        if(i % 2 != 0) {
+            printf("%d\n",i);
+        }
+    }
+    return 0;
+}
+
+int even5to50() {
+    for (int i = 5 ; i<=50;i++) {
+        if (i % 2 == 0) {
+            printf("%d\n",i);
+        }
+    }
+    return 0;
+}
+
+int factorial() {
+    int n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+    
+    int fact = 1;
+    for(int i = 1; i<=n; i++) {
+        fact = fact * i;
+    }
+    printf("The factorial is %d",fact);
+    
+}
+
 
 int main(){
     // forloops();
@@ -165,5 +222,11 @@ int main(){
     // multiply();
     // table();
     // pattern();
-    breakstatement();
+    // breakstatement();
+    // looptillodd();
+    // loopuntil7();
+    // continuestatement();
+    // odd5to50();
+    // even5to50();
+    factorial();
 }
