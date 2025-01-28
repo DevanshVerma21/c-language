@@ -120,8 +120,6 @@ int pattern(){
         printf("\n");
     }
 
-
-
 }
 
 int breakstatement(){
@@ -210,6 +208,61 @@ int factorial() {
     
 }
 
+int reversetable(){
+    int n;
+    printf("Enter the value of n: ");
+    scanf("%d",&n);
+    int i ;
+    for(i=10;i>=0;i--){
+        printf("%d\n",n*i);
+    }
+}
+
+int sumbtwrange(){
+    //5 to 50
+    int sum=0;
+    for(int i=5;i<=50;i++)
+    {
+        sum += i;
+    }
+    printf("Sum is %d",sum);
+
+
+}
+
+int is_prime(){
+    int i,n;
+    printf("enter to check if prime or not :");
+    scanf("%d",&n);
+
+    if (n<=1){
+        printf("Not prime\n");
+        return 0;
+    
+    }
+        for (int i = 2; i <= sqrt(n);i++){
+           if (n % i == 0){
+                printf("Not prime");
+                return 0;
+            } 
+        }   
+        printf("Prime number\n");
+    }
+
+
+
+int squarepattern(){
+    int n,j,i;
+    printf("Enter the value of number of rows: ");
+    scanf("%d",&n);
+
+    for (int i=0;i<=n;i++){
+        for(int j =0;j<=n;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+}
 
 int main(){
     // forloops();
@@ -228,5 +281,11 @@ int main(){
     // continuestatement();
     // odd5to50();
     // even5to50();
-    factorial();
+    // factorial();
+    // reversetable();
+    // sumbtwrange();
+    // is_prime();
+    // primeinrange();
+    // printinginrange();
+    // squarepattern();
 }
