@@ -17,18 +17,32 @@ int main(){
 
     // printf("%d",a&b);
 
-    int num, result, shift;
+    // int num, result, shift;
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
+    // printf("Enter a number: ");
+    // scanf("%d", &num);
 
-    printf("Enter the number of positions to shift: ");
-    scanf("%d", &shift);
+    // printf("Enter the numbe of positions to shift: ");
+    // scanf("%d", &shift);
 
-    result = num >> shift;
+    // result = num >> shift;
 
-    printf("Result of %d right-shifted by %d positions: %d\n", num, shift, result);
+    // printf("Result of %d right-shifted by %d positions: %d\n", num, shift, result);
 
+    // return 0;
+
+    char name[100];
+    scanf("%s",name);
+    int age;
+    scanf("%d",age);
+    char hobby[100];
+    scanf("%s",&name);
+    scanf("%d",&age);
+    scanf("%s",hobby);
+
+    printf("%s",name);
+    printf("%d",age);
+    printf("%s",hobby);
     return 0;
 }
 
