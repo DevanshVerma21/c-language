@@ -13,7 +13,6 @@ void fibbonaci(int n){
         second = next;
 
     }
-    // printf("\n");
 }
 
 int main(){
