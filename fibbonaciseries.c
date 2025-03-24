@@ -1,29 +1,25 @@
 #include <stdio.h>
 
-void fibbonaci(int n){
-    long long first = 0,second=1,next;
-
-    printf("%lld\n", first); 
+void fibonaci(int n){
+    long long first=0,second=1,next;
+    printf("%lld\n",first);
     printf("%lld\n",second);
 
-    for(int i = 3;i <= n; i++){
+    for (int i = 3;i<=n;i++){
         next = first + second;
-        printf("%lld\n", next);
+        printf("%lld\n",next);
         first = second;
-        second = next;
-
+        second= next;
     }
 }
 
-int main(){
-    int n;
-    printf("Enter the number of terms in series:");
+int main(int n){
+    printf("Enter the value of n:");
     scanf("%d",&n);
-    if(n>=2){
-        fibbonaci(n);
+    if (n<2){
+        printf("Enter a value grater than 2");
     }
     else{
-        printf("Enter a number greater than 2.");
+        fibonaci(n);
     }
-    return 0;
 }
