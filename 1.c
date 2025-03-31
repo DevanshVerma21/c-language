@@ -13,7 +13,7 @@ void bubblesort(int arr[],int n){
 }
 
 void mergedarrays(int arr1[],int size1,int arr2[],int size2){
-    for(int i = 0;i<size2;i++){
+    for(int i = 0;i<size2;i++){ //merging two in one
         arr1[size1 + i] = arr2[i];
     }
 
