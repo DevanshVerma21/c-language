@@ -5,7 +5,7 @@ int main(){
     int array1[]={1,2,3};
     
     //input
-    int *ptr = &adhaar[0];
+    // int *ptr = &adhaar[0];
     for (int i = 0;i<5;i++){
         printf("%d index: ",i);
         scanf("%d",&adhaar[i]);
@@ -13,7 +13,7 @@ int main(){
 
     //output
     for (int i=0;i<5;i++){
-        printf("%d index : %.2d\n",i, adhaar[i]);
+        printf("%d index : %d\n",i, adhaar[i]);
     }
     // int length = sizeof(array1)/sizeof(array1[0]);
     // printf("%d\n",length);
