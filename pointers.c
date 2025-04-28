@@ -1,25 +1,19 @@
 #include <stdio.h>
+
 int main(){
-//     int age = 22;
-//     int *ptr = &age;
-//     int **pptr = &ptr;
+    int a = 5;
+    int b=5;
+    int* x = &a;
+    *x =7;
+    printf("%p\n",&a);
+    // printf("%p\n",&b);
+    // printf("%p\n",x);
+    // printf("%p\n",&x);
+    // printf("%d\n",*x);
+    printf("%d\n",a);
+
+
     
-// //address
-//     printf("%u\n",&age);
-//     printf("%u\n",ptr);
-//     printf("%u\n",&ptr);
 
-// //value
-//     printf("%d\n",age);
-//     printf("%d\n",*ptr);
-//     printf("%d\n",*(&age));
-
-//     printf("%d\n",&pptr);
-
-    int i = 6;
-    int *ptr = &i;
-    int **pptr = &ptr;
-
-    printf("%d\n",**pptr);
-
+    return 0;
 }
