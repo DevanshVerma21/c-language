@@ -1,19 +1,20 @@
 #include <stdio.h>
 #include <math.h>
 
-// Function to check if a number is an Armstrong number
-int isArmstrong(int num) {
-    int original = num, sum = 0, remainder;
-    int digits = (int)log10(num) + 1; // Get number of digits directly
+int isarmstrong(int num){
+    int original = num;
+    int sum = 0;
+    int digits = (int)log10(num)+1;
+    int remainder;
     
     int temp = num;
-    while (temp > 0) {
+    while(temp>0){
         remainder = temp % 10;
-        sum += pow(remainder, digits);
-        temp /= 10;
+        sum += (int)pow(remainder,digits);
+        temp/=10;
     }
-    
-    return (original == sum);
+
+    return original==sum;
 }
 
 int main() {
@@ -30,4 +31,6 @@ int main() {
     
     return 0;
 }
+
+
 

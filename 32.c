@@ -11,6 +11,7 @@ int isprime(int num){
     }
     return 1;
 }
+
 int main(){
     int n;
     printf("Enter the values of n:");
@@ -30,3 +31,4 @@ int main(){
     }
     printf("\n");
 }
+
